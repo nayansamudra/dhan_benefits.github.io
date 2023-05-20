@@ -102,36 +102,37 @@
   }
 }
 
-@media (max-width:1450px) {
+@media (max-width: 1450px) {
   #Heading {
     font-size: 40px !important;
   }
 }
 
-@media (max-width:1250px) {
+@media (max-width: 1250px) {
   #Heading {
     font-size: 35px !important;
   }
-  #Tci_logo,#dhan_logo{
-    width: 100%
+  #Tci_logo,
+  #dhan_logo {
+    width: 100%;
   }
 }
 
-@media (max-width:1120px) {
-  .container-fluid{
+@media (max-width: 1120px) {
+  .container-fluid {
     padding-left: 25px !important;
     padding-right: 25px !important;
   }
 }
 
-@media (max-width:1120px) {
+@media (max-width: 1120px) {
   #Heading {
     font-size: 30px !important;
   }
 }
 
-@media (max-width:992px) {
-  #tci_logo_col{
+@media (max-width: 992px) {
+  #tci_logo_col {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
@@ -181,7 +182,7 @@ For Mobile View
   .showing {
     display: inline !important;
   }
-  .mobile_video{
+  .mobile_video {
     position: relative !important;
   }
   .w3-display-middle {
@@ -222,6 +223,10 @@ For Mobile View
   #Heading {
     font-size: 20px !important;
   }
+
+  .referral-link a {
+    font-size: x-large !important;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -243,4 +248,47 @@ For Mobile View
   #Heading {
     font-size: 17px !important;
   }
+  .referral-link a {
+    font-size: large !important;
+    padding: 5px 10px !important;
+  }
+  .referral-link {
+    margin: 5px 0 !important;
+  }
+  .Heading_Row {
+    margin-bottom: 10px !important;
+  }
+  ol li {
+    font-size: large !important;
+    line-height: 30px !important;
+  }
+}
+
+.referral-link {
+  text-align: center;
+}
+
+.referral-link a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #3c73ff, #1a8e66);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.referral-link a:hover {
+  background-color: #0056b3;
+}
+
+.container h1{
+  margin-bottom: 25px !important;
+  font-weight: 700;
+}
+
+ol li {
+  font-size: x-large;
+  line-height: 40px;
 }
