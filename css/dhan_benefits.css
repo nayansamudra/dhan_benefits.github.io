@@ -102,6 +102,41 @@
   }
 }
 
+@media (max-width:1450px) {
+  #Heading {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width:1250px) {
+  #Heading {
+    font-size: 35px !important;
+  }
+  #Tci_logo,#dhan_logo{
+    width: 100%
+  }
+}
+
+@media (max-width:1120px) {
+  .container-fluid{
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
+}
+
+@media (max-width:1120px) {
+  #Heading {
+    font-size: 30px !important;
+  }
+}
+
+@media (max-width:992px) {
+  #tci_logo_col{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
 /* -------------
 For Mobile View 
 ------------- */
@@ -146,9 +181,12 @@ For Mobile View
   .showing {
     display: inline !important;
   }
+  .mobile_video{
+    position: relative !important;
+  }
   .w3-display-middle {
     position: absolute;
-    top: 35%;
+    top: 1%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -180,11 +218,29 @@ For Mobile View
   .space-mob {
     margin-top: 10px !important;
   }
+
+  #Heading {
+    font-size: 20px !important;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   .coming-down-always {
     margin-top: 10px !important;
     padding-top: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  #Heading_col {
+    padding-left: 5px !important;
+    padding-right: 0 !important;
+  }
+  #dhan_logo_col {
+    padding-left: 5px !important;
+    padding-right: 0 !important;
+  }
+  #Heading {
+    font-size: 17px !important;
   }
 }
