@@ -146,6 +146,7 @@
   .pa52 {
     margin-left: 2% !important;
     max-width: 95% !important;
+    margin-bottom: 15px !important;
   }
 }
 
@@ -282,7 +283,7 @@ For Mobile View
   }
   .angel_banner_mobile {
     display: block !important;
-    margin-bottom: 5px;
+    margin-bottom: 35px;
   }
   .angel_banner_laptop {
     display: none !important;
