@@ -8,8 +8,8 @@
   padding-bottom: 35px;
 }
 .container-fluid {
-  padding-left: 90px !important;
-  padding-right: 90px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
   max-width: 1550px !important;
   margin: auto;
 }
@@ -33,6 +33,19 @@
   border-radius: 5px;
   margin-right: 12px;
 }
+.greenlinelarge_1 {
+  height: 55px;
+  width: 4px;
+  min-width: 5px;
+  background-color: #8d96de;
+  border-radius: 5px;
+  margin-right: 12px;
+}
+@media (max-width: 1200px) {
+  .greenlinelarge_1 {
+    height: 100px;
+  }
+}
 .graay {
   color: gray;
   line-height: 30px !important;
@@ -48,6 +61,11 @@
 }
 .headings {
   font-size: 44px !important;
+  font-weight: 700 !important;
+  color: #363636 !important;
+}
+.headings_1 {
+  font-size: 34px !important;
   font-weight: 700 !important;
   color: #363636 !important;
 }
@@ -102,40 +120,50 @@
   }
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1195px) {
   #Heading {
     font-size: 40px !important;
   }
-}
-
-@media (max-width: 1250px) {
-  #Heading {
-    font-size: 35px !important;
-  }
-  #Tci_logo,
   #dhan_logo {
-    width: 100%;
+    width: 150px !important;
   }
 }
 
-@media (max-width: 1120px) {
-  .container-fluid {
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-  }
-}
-
-@media (max-width: 1120px) {
+@media (max-width: 768px) {
   #Heading {
     font-size: 30px !important;
   }
-}
-
-@media (max-width: 992px) {
-  #tci_logo_col {
+  #dhan_logo {
+    width: 120px !important;
+  }
+  #Tci_logo {
+    width: 80px !important;
+  }
+  #dhan_logo_col {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+  .pa52 {
+    margin-left: 2% !important;
+    max-width: 95% !important;
+  }
+}
+
+.angel_banner_img {
+  border-radius: 12px;
+}
+
+.angel_banner {
+  border-radius: 12px !important;
+  border: 1px solid #dfdcdc !important;
+  cursor: pointer;
+  transition: 0.8s;
+  box-shadow: 5px 5px 5px white;
+}
+
+.angel_banner:hover {
+  border: 1px solid #b3adad;
+  box-shadow: 5px 5px 5px #dcc8f1;
 }
 
 /* -------------
@@ -143,9 +171,9 @@ For Mobile View
 ------------- */
 
 @media only screen and (max-width: 600px) {
-  .container-fluid {
+  .heading_container-fluid {
     padding-left: 7% !important;
-    padding-right: 7% !important;
+    padding-right: 10% !important;
   }
   .hide {
     display: none !important;
@@ -219,20 +247,56 @@ For Mobile View
   .space-mob {
     margin-top: 10px !important;
   }
-
-  #Heading {
-    font-size: 20px !important;
+}
+@media (max-width:585px) {
+  .headings_1 {
+    font-size: 29px !important;
   }
-
-  .referral-link a {
-    font-size: x-large !important;
+  .greenlinelarge_1 {
+    height: 85px;
+  }
+  ol li {
+    font-size: large !important;
+    line-height: 30px !important;
+  }
+  .ol_li_row{
+    margin-left: 25px !important;
   }
 }
-
 @media only screen and (max-width: 500px) {
   .coming-down-always {
     margin-top: 10px !important;
     padding-top: 10px !important;
+  }
+  #Tci_logo {
+    width: 50px !important;
+  }
+  #Heading {
+    font-size: 20px !important;
+  }
+  #dhan_logo {
+    width: 90px !important;
+  }
+  .heading_container-fluid {
+    padding-left: 4% !important;
+  }
+  .angel_banner_mobile {
+    display: block !important;
+    margin-bottom: 5px;
+  }
+  .angel_banner_laptop {
+    display: none !important;
+  }
+  .pa50 {
+    padding-bottom: 0px;
+  }
+  .greenlinelarge_1 {
+    height: 55px;
+  }
+  .headings_1 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    color: #363636 !important;
   }
 }
 
@@ -245,50 +309,17 @@ For Mobile View
     padding-left: 5px !important;
     padding-right: 0 !important;
   }
-  #Heading {
-    font-size: 17px !important;
-  }
-  .referral-link a {
-    font-size: large !important;
-    padding: 5px 10px !important;
-  }
-  .referral-link {
-    margin: 5px 0 !important;
-  }
   .Heading_Row {
     margin-bottom: 10px !important;
   }
   ol li {
-    font-size: large !important;
+    font-size: medium !important;
     line-height: 30px !important;
   }
-}
-
-.referral-link {
-  text-align: center;
-}
-
-.referral-link a {
-  display: inline-block;
-  padding: 10px 20px;
-  background: linear-gradient(to right, #3c73ff, #1a8e66);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 50px;
-  font-size: xx-large;
-  font-weight: 700;
-}
-
-.referral-link a:hover {
-  background-color: #0056b3;
-}
-
-.container h1{
-  margin-bottom: 25px !important;
-  font-weight: 700;
 }
 
 ol li {
   font-size: x-large;
   line-height: 40px;
+  color: #666666;
 }

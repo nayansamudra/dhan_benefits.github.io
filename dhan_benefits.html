@@ -12,18 +12,55 @@
 </head>
 
 <body>
-    <div class="container-fluid pa50">
-        <div class="mb-5 row d-flex align-items-center Heading_Row">
-            <div class="col-1 text-center" id="tci_logo_col"><img id="Tci_logo" src="img/tci_logo.png" width="100%">
+    <div class="container-fluid heading_container-fluid pa50">
+        <div class="mb-1 row d-flex align-items-center Heading_Row">
+            <div class="col-2 text-center" id="tci_logo_col"><img id="Tci_logo" src="img/tci_logo.png" width="100px">
             </div>
-            <div class="col-9 text-center" id="Heading_col"><span id="Heading"
-                    style="font-size: xxx-large;font-weight: 700;">Trading Cafe India in collbration with Dhan</span>
+            <div class="col-7 text-center" id="Heading_col"><span id="Heading"
+                    style="font-size: xxx-large;font-weight: 700;">TCI - DHAN Collaboration</span>
             </div>
-            <div class="col" id="dhan_logo_col"><img id="dhan_logo" src="img/dhan-logo.png" width="75%"></div>
-            <div class="referral-link">
-                <a href="https://invite.dhan.co/?join=TRED33">Join Now</a>
+            <div class="col-3 text-center" id="dhan_logo_col"><img id="dhan_logo" src="img/dhan-logo.png" width="170px">
             </div>
         </div>
+        <div class="row d-flex justify-content-center angel_banner_laptop">
+            <div class="col-8" id="banner_image">
+                <div class="mx-2 px-0 mt-3 angel_banner">
+                    <img id="community_banner" class="w-100 angel_banner_img" src="img/dhan_banner.png"
+                        onclick='redirect("https://invite.dhan.co/?join=TRED33",true)'>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mx-2 px-0 mt-3 angel_banner angel_banner_mobile" style="display: none;">
+        <img id="community_banner" class="w-100 angel_banner_img" src="img/dhan_banner.png"
+            onclick='redirect("https://invite.dhan.co/?join=TRED33",true)'>
+    </div>
+    <div class="mb-5 container pa52">
+        <div class="row">
+            <div class="col-12 mb-2 nopad-mob">
+                <br>
+                <div class="row hel">
+                    <div class="col-12 d-flex">
+                        <div class="greenlinelarge_1"></div>
+                        <div>
+                            <small class="blackk1 headings_1 pato5 ma0 left">Exclusive benefits when you open Dhan account through our link:</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="ms-5 mt-3 row ol_li_row">
+                    <ol>
+                        <li>Tredcode integration with Dhan account.</li>
+                        <li>One click chart opening and trade options for top momentum stocks in intraday.</li>
+                        <li>Unlimited alerts placing facilities for pin point entries on tredcode intraday boost
+                            stocks.</li>
+                        <li>Free strategy builder for options and ready-made strategies to execute directly with one
+                            click.</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid pa51">
         <div class="row">
             <div class="col-md-5 hide"></div>
             <div class="col-md-7 col-12 mb-2 nopad-mob">
@@ -159,17 +196,6 @@
             </div>
         </div>
     </div>
-    <div class="mb-5 container">
-        <h1>Exclusive benefits when you open Dhan account through our link:</h1>
-        <ol>
-            <li>Tredcode integration with Dhan account.</li>
-            <li>One click chart opening and trade options for top momentum stocks in intraday.</li>
-            <li>Unlimited alerts placing facilities for pin point entries on tredcode intraday boost
-                stocks.</li>
-            <li>Free strategy builder for options and ready-made strategies to execute directly with one
-                click.</li>
-        </ol>
-    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
@@ -181,27 +207,27 @@
         crossorigin="anonymous"></script>
 
     <script>
-        if ($(window).width() < 768) {
-            $('#tci_logo_col').removeClass('col-1').addClass('col-2');
-            $('#Heading_col').removeClass('col-9').addClass('col-7');
-            $('#dhan_logo_col').removeClass('col').addClass('col-3');
+        function redirect(url, isNewTab) {
+            if (isNewTab) {
+                window.open(url, '_blank');
+            } else {
+                window.location.href = url;
+            }
         }
-        else if ($(window).width() > 768) {
-            $('#tci_logo_col').removeClass('col-2').addClass('col-1');
-            $('#Heading_col').removeClass('col-7').addClass('col-9');
-            $('#dhan_logo_col').removeClass('col-3').addClass('col');
+
+        if ($(window).width() < 900) {
+            $('#banner_image').removeClass('col-8').addClass('col-12');
+        }
+        else if ($(window).width() > 900) {
+            $('#banner_image').removeClass('col-12').addClass('col-8');
         }
 
         $(window).resize(function () {
-            if ($(window).width() < 768) {
-                $('#tci_logo_col').removeClass('col-1').addClass('col-2');
-                $('#Heading_col').removeClass('col-9').addClass('col-7');
-                $('#dhan_logo_col').removeClass('col').addClass('col-3');
+            if ($(window).width() < 900) {
+                $('#banner_image').removeClass('col-8').addClass('col-12');
             }
-            else if ($(window).width() > 768) {
-                $('#tci_logo_col').removeClass('col-2').addClass('col-1');
-                $('#Heading_col').removeClass('col-7').addClass('col-9');
-                $('#dhan_logo_col').removeClass('col-3').addClass('col');
+            else if ($(window).width() > 900) {
+                $('#banner_image').removeClass('col-12').addClass('col-8');
             }
         })
     </script>
