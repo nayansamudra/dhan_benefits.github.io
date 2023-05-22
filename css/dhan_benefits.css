@@ -281,13 +281,6 @@ For Mobile View
   .heading_container-fluid {
     padding-left: 4% !important;
   }
-  .angel_banner_mobile {
-    display: block !important;
-    margin-bottom: 35px;
-  }
-  .angel_banner_laptop {
-    display: none !important;
-  }
   .pa50 {
     padding-bottom: 0px;
   }
@@ -298,6 +291,10 @@ For Mobile View
     font-size: 18px !important;
     font-weight: 700 !important;
     color: #363636 !important;
+  }
+  #banner_image div {
+    font-size: large !important;
+    padding-bottom: 10px !important;
   }
 }
 
