@@ -172,6 +172,9 @@ For Mobile View
 ------------- */
 
 @media only screen and (max-width: 600px) {
+  .pa50 {
+    padding-top: 25px !important;
+   }
   .heading_container-fluid {
     padding-left: 7% !important;
     padding-right: 10% !important;
