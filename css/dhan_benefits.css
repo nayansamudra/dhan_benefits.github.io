@@ -174,7 +174,7 @@ For Mobile View
 @media only screen and (max-width: 600px) {
   .pa50 {
     padding-top: 25px !important;
-   }
+  }
   .heading_container-fluid {
     padding-left: 7% !important;
     padding-right: 10% !important;
@@ -252,7 +252,7 @@ For Mobile View
     margin-top: 10px !important;
   }
 }
-@media (max-width:585px) {
+@media (max-width: 585px) {
   .headings_1 {
     font-size: 29px !important;
   }
@@ -263,7 +263,7 @@ For Mobile View
     font-size: large !important;
     line-height: 30px !important;
   }
-  .ol_li_row{
+  .ol_li_row {
     margin-left: 25px !important;
   }
 }
@@ -299,6 +299,10 @@ For Mobile View
     font-size: large !important;
     padding-bottom: 10px !important;
   }
+  .btn-square {
+    width: 38px !important;
+    height: 38px !important;
+  }
 }
 
 @media only screen and (max-width: 430px) {
@@ -324,3 +328,26 @@ ol li {
   line-height: 40px;
   color: #666666;
 }
+
+.back-to-top {
+  background: #8d96de;
+  height: 50px;
+  border-radius: 100% !important;
+  border: none;
+}
+
+.btn-square {
+  width: 48px;
+  height: 48px;
+}
+
+.btn-square {
+  padding: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  border-radius: 2px;
+}
+
+
